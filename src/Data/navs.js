@@ -5,7 +5,8 @@ const navs = [
     },
     {
         to: "/cart",
-        text: "View Cart"
+        text: "Cart",
+        isCart: true,
     }
 ]
 

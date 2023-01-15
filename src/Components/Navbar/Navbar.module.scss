@@ -22,4 +22,19 @@
             background-color: #111;
         }
     }
+    .cart {
+        position: fixed;
+        right: 20px;
+        .counter {
+            background-color: orange;
+            color: white;
+            position: fixed;
+            top: 3px;
+            right: 20px;
+            padding: 4px;
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: 700;
+        }
+    }
 }

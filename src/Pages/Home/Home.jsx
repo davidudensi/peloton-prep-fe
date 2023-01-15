@@ -17,7 +17,7 @@ const Home = () => {
   }, []);
 
   const fetchProducts = async () => {
-    const res = await fetch(`${BASE_URL}${ENDPOINTS.PRODUCTS.GET_PRODUCTS}`);
+    const res = await fetch(`${ENDPOINTS.PRODUCTS.GET_PRODUCTS}`);
     const data = await res.json();
     return data;
   };

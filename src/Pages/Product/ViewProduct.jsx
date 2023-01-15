@@ -19,7 +19,7 @@ const ViewProduct = () => {
 
   const fetchProduct = async () => {
     const res = await fetch(
-      `${BASE_URL}${ENDPOINTS.PRODUCTS.GET_PRODUCTS}/${id}`
+      `${ENDPOINTS.PRODUCTS.GET_PRODUCTS}/${id}`
     );
     const data = await res.json();
     return data;
