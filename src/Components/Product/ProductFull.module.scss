@@ -1,0 +1,48 @@
+.productFull {
+  width: 60%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 30px;
+  .product_image {
+    .image {
+      width: 30%;
+    }
+  }
+  .details {
+    text-align: center;
+    padding-top: 10px;
+    .name {
+      font-weight: 500;
+    }
+    .price {
+        font-size: 24px;
+        font-weight: 500;
+        display: block;
+    }
+  }
+  .quantityPane {
+    .quantity {
+      color: darkolivegreen;
+      font-size: 12px;
+    }
+  }
+  .actions {
+    padding-top: 10px;
+    .addToCart {
+      background-color: #4caf50; /* Green */
+      border: none;
+      color: white;
+      padding: 15px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      cursor: pointer;
+    }
+  }
+}

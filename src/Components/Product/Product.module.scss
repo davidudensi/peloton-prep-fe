@@ -1,0 +1,25 @@
+.product {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  margin: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  width: 16rem;
+  .item_image {
+    cursor: pointer;
+    .image {
+      width: 10rem;
+      height: 10rem;
+      padding: 5px;
+    }
+  }
+  .details {
+    cursor: pointer;
+  }
+  .quantityPane {
+    .quantity {
+      color: darkolivegreen;
+      font-size: 12px;
+    }
+  }
+}
