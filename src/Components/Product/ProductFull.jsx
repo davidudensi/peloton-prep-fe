@@ -1,11 +1,16 @@
-import { useEffect, useState } from "react";
-import { CART } from "../../Constants/Constants";
+import { useContext, useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { increment } from "../../Redux/counter";
+// import { CartContext } from "../../App";
 import Toast from "../Toast/Toast";
 import styles from "./ProductFull.module.scss";
 
 const ProductFull = ({ product }) => {
   const [toastProp, setToastProp] = useState({});
   const [showToast, setShowToast] = useState(false);
+  const dispatch = useDispatch();
+
+  //   const cart = useContext(CartContext);
 
   useEffect(() => {
     let p = {
@@ -15,6 +20,16 @@ const ProductFull = ({ product }) => {
     };
     setToastProp(p);
   }, [product]);
+
+  //   const handleAddToCart = () => {
+  //     cart.updateQuantity(cart.cartQuantity + 1);
+  //     setShowToast(true);
+  //   }
+
+  const handleAddToCart = () => {
+    dispatch(increment());
+    setShowToast(true);
+  };
 
   return (
     <div className={styles.productFull}>
@@ -33,7 +48,13 @@ const ProductFull = ({ product }) => {
         <span className={styles.quantity}>Just {product.quantity} left</span>
       </div>
       <div className={styles.actions}>
-        <button onClick={() => setShowToast(true)} className={styles.addToCart}>
+        {/* <button onClick={() => handleAddToCart()} className={styles.addToCart}>
+          Add to cart
+        </button> */}
+        <button
+          onClick={() => handleAddToCart()}
+          className={styles.addToCart}
+        >
           Add to cart
         </button>
       </div>

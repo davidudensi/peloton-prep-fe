@@ -4,7 +4,6 @@ import ProductList from "../../Components/ProductList/ProductList";
 import { BASE_URL, ENDPOINTS } from "../../Constants/Constants";
 
 const { Fragment, useState, useEffect } = require("react");
-
 const Home = () => {
   const [products, setProducts] = useState([]);
 
